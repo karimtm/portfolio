@@ -1,0 +1,189 @@
+/* start Variables */
+:root {
+  --main-padding: 20px;
+}
+/* end Variables */
+/* start global rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #131212;
+}
+ul {
+  list-style: none;
+}
+img {
+  width: 50px;
+}
+.container {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* end global rules */
+/* start components */
+.main-heading {
+  text-align: center;
+}
+.main-heading h2 {
+  font-weight: normal;
+  font-size: 40px;
+  position: relative;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+.main-heading h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  background-color: #333;
+  bottom: -30px;
+  width: 120px;
+}
+.main-heading h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -38px;
+  transform: translateX(-50%);
+  height: 14px;
+  width: 14px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  background-color: var(--white-color);
+}
+.main-heading p {
+  width: 500px;
+  margin: 0 auto 100px;
+  line-height: 2;
+  color: #777;
+}
+/* end  components */
+/* start header */
+header {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  /* background-color: #f1cf02; */
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  min-height: 90px;
+  /* background-color: #1c0010; */
+}
+header .container::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: #a2a2a2;
+  bottom: 15px;
+  width: 100%;
+}
+header .container nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 570px;
+  /* background-color: #2d2d; */
+  position: fixed;
+}
+header .container nav ul {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: #131212; */
+  height: 30px;
+}
+header .container nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  width: 70px;
+  height: 100%;
+  background-color: #333;
+  transition: 0.3s;
+}
+header .container nav ul li a.active {
+  color: #f1cf02;
+}
+header .container nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+header .container nav ul li:hover {
+  cursor: pointer;
+  background-color: #0e2fb2;
+}
+header .container nav .toggle-menu {
+  color: #fff;
+  cursor: pointer;
+}
+header .container nav .form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .container nav .form::before {
+  content: "";
+  border-left: 2px solid #f1cf02;
+  height: 40px;
+  margin: 0 10px;
+}
+header nav .form .fa-search {
+  color: #fff;
+}
+header nav .form .fa-search:hover {
+  color: #cb1f26;
+  cursor: pointer;
+}
+
+footer  {
+  width: 100%;
+  height: 50px;
+  background-color: #0e2fb2;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer p {
+  font-weight: bold;
+}
+footer .social {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+footer .social img {
+  width: 30px;
+  height: 30px;
+}
+
+
+
+
+/* end header */
+
+
+/* start  */
+/* end  */
